@@ -11,8 +11,7 @@ const getSomething = () => {
 
 const system = () => {
     console.log('init')
-    const promise = getSomething()
-    promise.then(some => {
+    getSomething().then(some => {
         console.log(`Something is ${some}`)
     })
     console.log('end');
